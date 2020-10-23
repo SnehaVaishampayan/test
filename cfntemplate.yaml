@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: lambda_handler
       Runtime: python3.8
-      CodeUri: TimeFunction/.
+      CodeUri: ./
       Events:
         MyTimeApi:
           Type: Api
