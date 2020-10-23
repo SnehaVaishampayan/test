@@ -2,7 +2,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - export BUCKET=ungerw-codepipeline-eu-central
       - aws cloudformation package --template-file cfntemplate.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yaml
 artifacts:
   type: zip
