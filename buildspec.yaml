@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file cfntemplate.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yaml
+      - aws cloudformation package --template-file cfntemplate.yaml --s3-bucket codepipeline-us-west-2-577660647740 --output-template-file outputtemplate.yaml
 artifacts:
   type: zip
   files:
