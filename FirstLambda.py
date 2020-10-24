@@ -1,6 +1,13 @@
 
+import json
 def lambda_handler(event, context):
-      message = 'Hello {} {}!'.format(event['first_name'], event['last_name'])  
-     return { 
-          'message' : message
-      }  
+    message = 'Hello'
+    a = {
+        'statusCode': 200,
+        'body': json.dumps({'input': message})
+        }
+    print(a)
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'input': message})
+    }
